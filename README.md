@@ -45,5 +45,14 @@ desde el encendido o ultimo reinicio de la ESP32 y que con el siguiente condicio
             bot.sendMessage(CHAT_ID, alerta_mensaje, "");
             Serial.println("Telegram: Mensaje de alerta enviado (temporizado).");
         }
-Provocamos que la ESP32 unicamente envie un mensaje al telegram si la longitud de este es mayor que cero, es decir, si hay algo escrito 
+Provocamos que la ESP32 unicamente envie un mensaje al telegram si la longitud de este es mayor que cero, es decir, si hay algo escrito. Asi al telegram no
+llegaran mensajes sin ninguna información, enviando asi al telegram con el CHAT_ID especificado en los parametros del comando bot.sendMessage, el contenido 
+presente en la variable alerta_mensaje, modificada en los condicionales anteriormente.
+
+Ya en la parte última del código lo único que se hace es imprimir los varoles en el serial monitor y la única linea a destacar es "if (!isnan(humedad) &&
+!isnan(Temperatura))" donde a traves de la función isnan comprobamos si los valores registrados en las variables humedad y temperatura son correctos o por el 
+contrario son valores no validos, irreales. Si isnan es falso es que entonces la variable float tiene un valor valido en su interior, un valor que si es un numero.
+
+Para concluir este texto, tengo que decir que hay una gran cantidad de ampliaciones para este código que se me han pasado por la cabeza(la adicción de más 
+sensores como por ejemplo un sensor que mida el pH, una alarma más profesional que los leds, la creación de una pagina web sencilla para mostrar los resultados, la fecha y horaexacta en la que se mandaron por última vez...) Pero debido a la escasez de tiempo que he tenido no he podido desarrollarlas.
 
