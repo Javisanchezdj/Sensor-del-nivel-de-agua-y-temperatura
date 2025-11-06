@@ -85,7 +85,7 @@ void loop() {
     if (WiFi.status() != WL_CONNECTED) {
         Serial.println("reconectando WiFi...");
         WiFi.begin(NOMBRE_WIFI, CONTRASEÑA);
-        delay(1000); 
+        delay(10000); 
         return; 
     }
     
