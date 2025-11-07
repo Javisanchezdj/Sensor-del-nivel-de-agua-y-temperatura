@@ -54,5 +54,5 @@ Ya en la parte última del código lo único que se hace es imprimir los varoles
 contrario son valores no validos, irreales. Si isnan es falso es que entonces la variable float tiene un valor valido en su interior, un valor que si es un numero.
 
 Para concluir este texto, tengo que decir que hay una gran cantidad de ampliaciones para este código que se me han pasado por la cabeza(la adicción de más 
-sensores como por ejemplo un sensor que mida el pH, una alarma más profesional que los leds, la creación de una pagina web sencilla para mostrar los resultados, la fecha y horaexacta en la que se mandaron por última vez...) Pero debido a la escasez de tiempo que he tenido no he podido desarrollarlas.
+sensores como por ejemplo un sensor que mida el pH, una alarma más profesional que los leds, la creación de una pagina web sencilla para mostrar los resultados, la fecha y hora exacta en la que se mandaron por última vez...) Pero debido a la escasez de tiempo que he tenido no he podido desarrollarlas.
 
